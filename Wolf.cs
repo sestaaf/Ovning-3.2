@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Övning_3.2
+namespace Övning_3_2
 {
 	class Wolf : Animal
 	{
