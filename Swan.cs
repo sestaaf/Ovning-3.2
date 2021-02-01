@@ -14,8 +14,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + ", Färg: " + Färg);
-
+			result.AppendLine($"Färg: {Färg}, {base.Stats()}");
 			return result.ToString();
 		}
 	}

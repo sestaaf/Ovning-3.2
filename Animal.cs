@@ -17,7 +17,7 @@ namespace Övning_3_2
 
 		public virtual string Stats()
 		{
-			return $"Namn: {Namn}, Längd: {Längd}, Vikt: {Vikt}, Ålder: {Ålder}";
+			return $"Namn: {Namn}, Längd: {Längd}, Vikt: {Vikt}, Ålder: {Ålder}.";
 		}
 
 		public Animal(string namn, int längd, int vikt, int ålder)

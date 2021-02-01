@@ -14,8 +14,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + ", Benlängd: " + BenLängd);
-
+			result.AppendLine($"Benlängd: {BenLängd}, { base.Stats()}");
 			return result.ToString();
 		}
 	}

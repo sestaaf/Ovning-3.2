@@ -16,9 +16,22 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + "Ras: " + Ras);
+			result.AppendLine($"Ras: {Ras}, {base.Stats()}");
 
 			return result.ToString();
 		}
+		
+		// 3.3.17: Kommer inte åt nedanstående från Animal då ärvningen går åt andra hållet.
+		//         Får också ett felmeddelande som jag inte fixar.
+
+		//public string ExtraInfo()
+		//{
+		//	if (Ras == "Tax")
+		//	{
+		//		var result = new StringBuilder();
+		//		result.AppendLine($"En {Ras} är lång och smal.");
+		//		return result.ToString();
+		//	}
+		//}
 	}
 }

@@ -16,7 +16,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + ", Kommer från land: " + FrånLand);
+			result.AppendLine($"Kommer från land: {FrånLand}, {base.Stats()}");
 
 			return result.ToString();
 		}

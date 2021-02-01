@@ -16,7 +16,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + ", Är den giftig: " + ÄrGiftig);
+			result.AppendLine($"Är den giftig: {ÄrGiftig}, { base.Stats()}");
 
 			return result.ToString();
 		}

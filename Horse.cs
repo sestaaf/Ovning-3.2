@@ -17,7 +17,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + "Mankhöjd: " + Mankhöjd);
+			result.AppendLine($"Mankhöjd: Mankhöjd, {base.Stats()}");
 
 			return result.ToString();
 		}

@@ -14,7 +14,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + ", Näbbvolym: " + NäbbVolym);
+			result.AppendLine($"Näbbvolym: {NäbbVolym}, { base.Stats()}");
 
 			return result.ToString();
 		}

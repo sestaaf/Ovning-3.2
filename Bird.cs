@@ -18,7 +18,7 @@ namespace Övning_3_2
 		public override string Stats()
 		{
 			var result = new StringBuilder();
-			result.AppendLine(base.Stats() + ", Kan den flyga: " + KanFlyga);
+			result.AppendLine($"Kan flyga: {KanFlyga}, { base.Stats()}");
 
 			return result.ToString();
 		}
