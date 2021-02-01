@@ -13,5 +13,12 @@ namespace Övning_3_2
 		{
 			FrånLand = frånLand;
 		}
+		public override string Stats()
+		{
+			var result = new StringBuilder();
+			result.AppendLine(base.Stats() + ", Kommer från land: " + FrånLand);
+
+			return result.ToString();
+		}
 	}
 }

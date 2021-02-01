@@ -11,5 +11,12 @@ namespace Övning_3_2
 		{
 			BenLängd = benLängd;
 		}
+		public override string Stats()
+		{
+			var result = new StringBuilder();
+			result.AppendLine(base.Stats() + ", Benlängd: " + BenLängd);
+
+			return result.ToString();
+		}
 	}
 }

@@ -13,5 +13,12 @@ namespace Övning_3_2
 		{
 			ÄrGiftig = ärGiftig;
 		}
+		public override string Stats()
+		{
+			var result = new StringBuilder();
+			result.AppendLine(base.Stats() + ", Är den giftig: " + ÄrGiftig);
+
+			return result.ToString();
+		}
 	}
 }

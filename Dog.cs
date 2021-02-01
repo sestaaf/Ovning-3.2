@@ -8,10 +8,17 @@ namespace Övning_3_2
 	{
 	public override string DoSound => "En hund skäller.";
 
-		public int Ras { get; set; }
-		public Dog(int ras, string namn, int längd, int vikt, int ålder) : base(namn, längd, vikt, ålder)
+		public string Ras { get; set; }
+		public Dog(string ras, string namn, int längd, int vikt, int ålder) : base(namn, längd, vikt, ålder)
 		{
 			Ras = ras;
+		}
+		public override string Stats()
+		{
+			var result = new StringBuilder();
+			result.AppendLine(base.Stats() + "Ras: " + Ras);
+
+			return result.ToString();
 		}
 	}
 }

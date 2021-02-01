@@ -13,5 +13,12 @@ namespace Övning_3_2
 		{
 			AntalTaggar = antalTaggar;
 		}
+		public override string Stats()
+		{
+			var result = new StringBuilder();
+			result.AppendLine(base.Stats() + "Antal taggar: " + AntalTaggar);
+
+			return result.ToString();
+		}
 	}
 }
